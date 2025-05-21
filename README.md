@@ -316,6 +316,9 @@ Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikas
 Dalam proyek ini, evaluasi model dilakukan dengan menggunakan confusion matrix, akurasi, dan f1 score sebagai metrik penilaian untuk setiap model. Sebelum itu, akan dijelaskan terlebih dahulu cara menghitung akurasi dan f1 score serta cara memanfaatkan confusion matrix.
 ### Penjelasan Confusion Matrix:
 Confusion matrix adalah sebuah tabel yang digunakan untuk menggambarkan performa model klasifikasi, khususnya dalam kasus klasifikasi biner maupun multi-kelas. Tabel ini memperlihatkan perbandingan antara hasil prediksi model dengan label sebenarnya.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/cae06f2c-285d-44aa-9e31-8d4db42b37c1" width="1000"/>
+</p>
 
 **Penjelasan masing-masing istilah:**
 - True Positive (TP): Jumlah data yang benar-benar positif dan diprediksi sebagai positif.
