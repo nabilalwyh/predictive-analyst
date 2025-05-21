@@ -318,6 +318,7 @@ Dalam proyek ini, evaluasi model dilakukan dengan menggunakan confusion matrix, 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c22ceb33-a882-4de4-ab66-c8e663e5c7e3" width="1000"/>
 </p>
+
 Menggunakan XGBoost dimaknai:
 - 59 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar.
 - 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
@@ -331,6 +332,7 @@ Menggunakan XGBoost dimaknai:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e8a92b68-bf70-4deb-bfad-89c991748a54" width="1000"/>
 </p>
+
 Menggunakan SVM dimaknai:
 1. 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
 2. 22 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar, namun:
@@ -351,6 +353,7 @@ Menggunakan SVM dimaknai:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/398bec10-6e8c-440e-99aa-eac4261b2019" width="1000"/>
 </p>
+
 Menggunakan Random Forest dimaknai:
 - 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
 - 42 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar, namun 2 responden salah diklasifikasikan sebagai Normal Weight, dan 1 responden sebagai Overweight Level II.
