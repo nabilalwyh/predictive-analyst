@@ -177,7 +177,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 ### Menangani Data Duplikat
 #### 1. Menghitung jumlah data duplikat
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="400"/>
+  <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="300"/>
 </p>
 
   > Berdasarkan program di atas, maka diketahui bahwa terdapat 24 data duplikat.
@@ -191,11 +191,76 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
 #### 3. Menghapus baris data yang duplikat 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="400"/>
+  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="300"/>
 </p>
   
   > Setelah program di atas dijalankan, maka sudah tidak ada lagi data yang duplikat.
 
+### Menangani Missing Value
+#### 1. Menampilkan data missing value
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f5331f7b-9246-48b7-8871-c5d544ee6bd4" width="300"/>
+</p>
+
+  > Berdasarkan output sebelumnya, tidak ditemukan nilai missing pada dataset df_filtered. Namun, penting untuk memeriksa keberadaan nilai nol pada setiap kolom, karena pada fitur seperti Gender, Weight, Height, CH2O, dan FCVC, nilai 0 tidak logis secara medis maupun perilaku konsumsi. Selain itu, perlu memeriksa nilai nan atau NaN pada kolom kategorikal. Nilai nol dan nan yang secara tidak sengaja dianggap valid dapat menjadi representasi nilai yang hilang (missing) dan berisiko menurunkan performa model machine learning yang dibangun.
+
+#### 2. Memeriksa apakah ada data umur, tinggi dan berat badan yang bernilai 0.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/57fc6c2a-0fe3-4c1c-a1c1-29cbdb570930" width="300"/>
+</p>
+
+  > Setelah dicek, tidak ada data dari umur, tinggi dan berat badan yang bernilai 0.
+
+#### 3. Menangani nilai nan pada data kategorikal feature
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6de8abba-36cf-4f16-9466-4757188c72d1" width="300"/>
+</p>
+
+  > Program di atas digunakan untuk mengganti nilai yang dianggap missing tapi bukan np.nan menjadi np.nan, lalu menghapusnya dengan program berikut.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f36df395-3f34-4b92-8b99-1a437d04cddc" width="300"/>
+</p>
+
+### Menangani Outliers dengan IQR Method
+#### 1. Menampilkan analisis statistik
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/80627d43-7d0e-428e-946d-517bc24d2676" width="300"/>
+</p>
+
+  > Fungsi `describe()` memberikan informasi statistik pada masing-masing kolom, antara lain:
+  > - `Count` adalah jumlah sampel pada data.
+  > - `Mean` adalah nilai rata-rata.
+  > - `Std` adalah standar deviasi.
+  > - `Min` yaitu nilai minimum setiap kolom.
+  > - `25%` adalah kuartil pertama. Kuartil adalah nilai yang menandai batas interval dalam empat bagian sebaran yang sama.
+  > - `50%` adalah kuartil kedua, atau biasa juga disebut median (nilai tengah).
+  > -` 75%` adalah kuartil ketiga.
+  > - `Max` adalah nilai maksimum.
+
+#### 2. Mengecek data outlier dan memvisualisasikannya
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f28dc028-f949-4a82-ba0c-79664d3db88d" width="300"/>
+</p>
+
+  > Program di atas akan menampilkan hasil visualisasi sebagai berikut:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3ce7a347-5d5c-4085-ad6e-bb56447803ae" width="300"/>
+</p>
+
+  > **Berikut adalah interpretasi dari boxplot di atas.**
+  > - Pada kolom Age, mayoritas responden berusia antara 20 hingga 25 tahun. Terdapat sejumlah responden dengan usia di atas 35 tahun, namun nilai tersebut masih wajar secara biologis dan tidak akan dihapus dari dataset.
+  > - Pada kolom `Weight`, dapat dilihat bahwa mayoritas responden memiliki berat badan di rentang 60-100 kilogram. Terdapat satu outlier, yaitu memiliki berat badan 173 kg. Meski demikian, outlier ini tidak akan dihapus karena sangat memungkinkan seseorang obesitas memiliki berat badan ekstrem.
+  > - Pada kolom `Height`, dapat dilihat bahwa mayoritas responden memiliki tinggi badan di rentang 1,6-1,7 meter. Terdapat satu outlier, yaitu memiliki tinggi badan hampir 2 meter. Meski demikian, outlier ini tidak akan dihapus karena sangat memungkinkan seseorang memiliki tinggi badan tersebut.
+  > - Pada kolom `NCP`, mayoritas responden makan sebanyak 3 kali sehari. Terdapat variasi jumlah makan dari 1 hingga 4 kali per hari. Nilai-nilai ini masih dianggap wajar karena dapat mencerminkan pola makan individu seperti diet tertentu atau program peningkatan massa otot.
+  > - Pada kolom `CH2O`,  dapat dilihat bahwa tidak ada outlier. Rata-rata responden minum air sebanyak 1,5-2,5 liter air.
+  > - Pada kolom-kolom lainnya seperti `FCVC`, `FAF`, dan `TUE`, persebaran data terlihat relatif normal dan tidak menunjukkan nilai ekstrem yang mencolok berdasarkan statistik deskriptif.
+  >
+  >
+  > **Kesimpulan:**
+  > Dari hasil analisis statistik deskriptif, dapat disimpulkan bahwa beberapa fitur seperti Age, Weight, Height, dan NCP menunjukkan keberadaan nilai yang tergolong ekstrem namun masih valid secara biologis dan kontekstual. Oleh karena itu, nilai-nilai tersebut tidak dihapus dari dataset karena tetap relevan untuk analisis obesitas. Sementara itu, fitur lain seperti CH2O, FAF, dan TUE menunjukkan distribusi data yang relatif normal tanpa adanya nilai yang mencolok sebagai outlier.
+  
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
 
