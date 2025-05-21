@@ -213,7 +213,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
 #### 3. Menangani nilai nan pada data kategorikal feature
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6de8abba-36cf-4f16-9466-4757188c72d1" width="300"/>
+  <img src="https://github.com/user-attachments/assets/6de8abba-36cf-4f16-9466-4757188c72d1" width="1000"/>
 </p>
 
   > Program di atas digunakan untuk mengganti nilai yang dianggap missing tapi bukan np.nan menjadi np.nan, lalu menghapusnya dengan program berikut.
@@ -225,7 +225,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 ### Menangani Outliers dengan IQR Method
 #### 1. Menampilkan analisis statistik
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/80627d43-7d0e-428e-946d-517bc24d2676" width="300"/>
+  <img src="https://github.com/user-attachments/assets/80627d43-7d0e-428e-946d-517bc24d2676" width="1000"/>
 </p>
 
   > Fungsi `describe()` memberikan informasi statistik pada masing-masing kolom, antara lain:
@@ -240,13 +240,13 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
 #### 2. Mengecek data outlier dan memvisualisasikannya
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f28dc028-f949-4a82-ba0c-79664d3db88d" width="300"/>
+  <img src="https://github.com/user-attachments/assets/f28dc028-f949-4a82-ba0c-79664d3db88d" width="1000"/>
 </p>
 
   > Program di atas akan menampilkan hasil visualisasi sebagai berikut:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3ce7a347-5d5c-4085-ad6e-bb56447803ae" width="300"/>
+  <img src="https://github.com/user-attachments/assets/3ce7a347-5d5c-4085-ad6e-bb56447803ae" width="1000"/>
 </p>
 
   > **Berikut adalah interpretasi dari boxplot di atas.**
