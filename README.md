@@ -129,7 +129,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
 #### 3. Membandingkan level obesitas dengan pola konsumsi makan
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/00a4ab93-1270-4189-99b9-3b9da5645fe2" width="600"/>
+  <img src="https://github.com/user-attachments/assets/00a4ab93-1270-4189-99b9-3b9da5645fe2" width="1000"/>
 </p>
 
   > **Insight:**
