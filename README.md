@@ -174,44 +174,45 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > - BMI merupakan indikator yang sangat kuat dan konsisten dalam membedakan level obesitas.
 
 ## Data Preparation
-### Menangani Data Duplikat
-#### 1. Menghitung jumlah data duplikat
+### Data Cleaning
+#### Menangani Data Duplikat
+##### 1. Menghitung jumlah data duplikat
 <p align="center">
   <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="300"/>
 </p>
 
   > Berdasarkan program di atas, maka diketahui bahwa terdapat 24 data duplikat.
 
-#### 2. Menampilkan baris data yang duplikat 
+##### 2. Menampilkan baris data yang duplikat 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/afd8eed2-7105-4cce-b8a8-0f0f5bf9e561" width="1000"/>
 </p>
   
   > Dari hasil di atas, terlihat bahwa ada data-data tersebut memang terduplikasi. Oleh karena itu, data duplikat ini akan dihapus.
 
-#### 3. Menghapus baris data yang duplikat 
+##### 3. Menghapus baris data yang duplikat 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="300"/>
 </p>
   
   > Setelah program di atas dijalankan, maka sudah tidak ada lagi data yang duplikat.
 
-### Menangani Missing Value
-#### 1. Menampilkan data missing value
+#### Menangani Missing Value
+##### 1. Menampilkan data missing value
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f5331f7b-9246-48b7-8871-c5d544ee6bd4" width="300"/>
 </p>
 
   > Berdasarkan output sebelumnya, tidak ditemukan nilai missing pada dataset df_filtered. Namun, penting untuk memeriksa keberadaan nilai nol pada setiap kolom, karena pada fitur seperti Gender, Weight, Height, CH2O, dan FCVC, nilai 0 tidak logis secara medis maupun perilaku konsumsi. Selain itu, perlu memeriksa nilai nan atau NaN pada kolom kategorikal. Nilai nol dan nan yang secara tidak sengaja dianggap valid dapat menjadi representasi nilai yang hilang (missing) dan berisiko menurunkan performa model machine learning yang dibangun.
 
-#### 2. Memeriksa apakah ada data umur, tinggi dan berat badan yang bernilai 0.
+##### 2. Memeriksa apakah ada data umur, tinggi dan berat badan yang bernilai 0.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/57fc6c2a-0fe3-4c1c-a1c1-29cbdb570930" width="300"/>
 </p>
 
   > Setelah dicek, tidak ada data dari umur, tinggi dan berat badan yang bernilai 0.
 
-#### 3. Menangani nilai nan pada data kategorikal feature
+##### 3. Menangani nilai nan pada data kategorikal feature
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6de8abba-36cf-4f16-9466-4757188c72d1" width="1000"/>
 </p>
@@ -222,8 +223,8 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   <img src="https://github.com/user-attachments/assets/f36df395-3f34-4b92-8b99-1a437d04cddc" width="300"/>
 </p>
 
-### Menangani Outliers dengan IQR Method
-#### 1. Menampilkan analisis statistik
+#### Menangani Outliers dengan IQR Method
+##### 1. Menampilkan analisis statistik
 <p align="center">
   <img src="https://github.com/user-attachments/assets/80627d43-7d0e-428e-946d-517bc24d2676" width="1000"/>
 </p>
@@ -238,7 +239,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > -` 75%` adalah kuartil ketiga.
   > - `Max` adalah nilai maksimum.
 
-#### 2. Mengecek data outlier dan memvisualisasikannya
+##### 2. Mengecek data outlier dan memvisualisasikannya
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f28dc028-f949-4a82-ba0c-79664d3db88d" width="1000"/>
 </p>
@@ -246,7 +247,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > Program di atas akan menampilkan hasil visualisasi sebagai berikut:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3ce7a347-5d5c-4085-ad6e-bb56447803ae" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/28f94a59-0b91-4356-9bd0-3960714fa053" width="1000"/>
 </p>
 
   > **Berikut adalah interpretasi dari boxplot di atas.**
@@ -260,7 +261,35 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   >
   > **Kesimpulan:**
   > Dari hasil analisis statistik deskriptif, dapat disimpulkan bahwa beberapa fitur seperti Age, Weight, Height, dan NCP menunjukkan keberadaan nilai yang tergolong ekstrem namun masih valid secara biologis dan kontekstual. Oleh karena itu, nilai-nilai tersebut tidak dihapus dari dataset karena tetap relevan untuk analisis obesitas. Sementara itu, fitur lain seperti CH2O, FAF, dan TUE menunjukkan distribusi data yang relatif normal tanpa adanya nilai yang mencolok sebagai outlier.
-  
+
+### Encoding Categorical
+Encoding Kategorikal dilakukan terhadap variabel yang hanya berisi antara `yes` (iya) dan `no` (tidak), yaitu pada variable:
+* `FAVC` (Apakah sering mengonsumsi makanan berkalori tinggi?),
+* `SCC` (Apakah memantau jumlah kalori yang dikonsumsi setiap hari?),
+* `SMOKE` (Apakah merokok?),
+* `family_history_with_overweight` (Apakah ada anggota keluarga yang menderita atau pernah menderita kelebihan berat badan?)
+Berikut adalah program untuk melakukan encoding categorical.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/157877a4-2663-4520-9c33-f0e06d66f473" width="300"/>
+</p>
+
+### One Hot Encoding 
+One Hot Encoding dilakukan terhadap 4 variabel, yaitu
+* Gender – Male, Female
+* CALC – no, Sometimes, Frequently
+* CAEC – no, Sometimes, Frequently, dll
+* MTRANS – Public_Transportation, Walking, Automobile, Bike, Motorbike (atau lainnya)
+karena kategori-kategori pada variabel tersebut memiliki urutan tertentu.
+Berikut adalah program untuk melakukan one hot encoding.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/84d79ee1-7611-407f-a01a-b0d4c87dd8a3" width="300"/>
+</p>
+
+### Dataset akhir yang sudah melalui tahap data preparation
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a6696e54-76eb-4b6c-8fb6-7fcb6b10136a" width="1000"/>
+</p>
+
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
 
