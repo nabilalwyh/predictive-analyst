@@ -247,7 +247,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > Program di atas akan menampilkan hasil visualisasi sebagai berikut:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/28f94a59-0b91-4356-9bd0-3960714fa053" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/23f7c948-eb27-4a64-838e-a44554b921ac" width="1000"/>
 </p>
 
   > **Berikut adalah interpretasi dari boxplot di atas.**
@@ -270,7 +270,7 @@ Encoding Kategorikal dilakukan terhadap variabel yang hanya berisi antara `yes` 
 * `family_history_with_overweight` (Apakah ada anggota keluarga yang menderita atau pernah menderita kelebihan berat badan?)
 Berikut adalah program untuk melakukan encoding categorical.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/157877a4-2663-4520-9c33-f0e06d66f473" width="300"/>
+  <img src="https://github.com/user-attachments/assets/157877a4-2663-4520-9c33-f0e06d66f473" width="800"/>
 </p>
 
 ### One Hot Encoding 
@@ -282,7 +282,7 @@ One Hot Encoding dilakukan terhadap 4 variabel, yaitu
 karena kategori-kategori pada variabel tersebut memiliki urutan tertentu.
 Berikut adalah program untuk melakukan one hot encoding.
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/84d79ee1-7611-407f-a01a-b0d4c87dd8a3" width="300"/>
+  <img src="https://github.com/user-attachments/assets/84d79ee1-7611-407f-a01a-b0d4c87dd8a3" width="800"/>
 </p>
 
 ### Dataset akhir yang sudah melalui tahap data preparation
