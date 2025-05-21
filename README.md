@@ -247,7 +247,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > Program di atas akan menampilkan hasil visualisasi sebagai berikut:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/23f7c948-eb27-4a64-838e-a44554b921ac" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/23a7f903-4084-4591-b1c0-19a6cdc0bad2" width="1000"/>
 </p>
 
   > **Berikut adalah interpretasi dari boxplot di atas.**
