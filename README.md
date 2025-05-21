@@ -25,15 +25,15 @@ Berdasarkan problem statements, berikut tujuan yang ingin dicapai pada proyek in
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 ### Solution statements
-    1.   Melakukan analisis statistik atau membangun model machine learning untuk mengukur seberapa kuat hubungan dan kontribusi tiap faktor terhadap target (tingkat obesitas), sehingga faktor-faktor utama yang paling berpengaruh dapat diidentifikasi.
-    2.   Menerapkan berbagai algoritma machine learning dan membandingkan hasil performanya untuk menemukan model dengan akurasi terbaik dalam memprediksi tingkat obesitas berdasarkan riwayat kesehatan dan aktivitas seseorang, kemudian menggunakan model terbaik tersebut untuk melakukan prediksi (inference).
-    3. Melakukan analisis menggunakan variable terkait, untuk memahami kaitan antara riwayat obesitas keluarga dengan tingkat diabetes yang dialami oleh seseorang
+1. Melakukan analisis statistik atau membangun model machine learning untuk mengukur seberapa kuat hubungan dan kontribusi tiap faktor terhadap target (tingkat obesitas), sehingga faktor-faktor utama yang paling berpengaruh dapat diidentifikasi.
+2. Menerapkan berbagai algoritma machine learning dan membandingkan hasil performanya untuk menemukan model dengan akurasi terbaik dalam memprediksi tingkat obesitas berdasarkan riwayat kesehatan dan aktivitas seseorang, kemudian menggunakan model terbaik tersebut untuk melakukan prediksi (inference).
+3. Melakukan analisis menggunakan variable terkait, untuk memahami kaitan antara riwayat obesitas keluarga dengan tingkat diabetes yang dialami oleh seseorang
 
 ### Metodologi
-    Tujuan yang ingin dicapai dalam proyek ini adalah memprediksi level diabetes seseorang berdasarkan penelitian yang ada. Metodologi prediktif yang digunakan berfokus pada pembangunan model klasifikasi dengan level diabetes sebagai target utama.
+Tujuan yang ingin dicapai dalam proyek ini adalah memprediksi level diabetes seseorang berdasarkan penelitian yang ada. Metodologi prediktif yang digunakan berfokus pada pembangunan model klasifikasi dengan level diabetes sebagai target utama.
 
 ### Metrik
-    Metrik yang digunakan untuk mengevaluasi seberapa baik model klasifikasi merupakan confusion matrix. confusion matrix merupakan suatu metode yang digunakan untuk melakukan perhitungan akurasi pada konsep data mining.
+Metrik yang digunakan untuk mengevaluasi seberapa baik model klasifikasi merupakan confusion matrix. confusion matrix merupakan suatu metode yang digunakan untuk melakukan perhitungan akurasi pada konsep data mining.
 
 ## Data Understanding
 Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari platform open source Kaggle dan dipublikasikan oleh fatemehmehrparvar. Dataset ini mencakup data untuk memperkirakan tingkat obesitas pada individu yang berasal dari negara Meksiko, Peru, dan Kolombia, berdasarkan kebiasaan makan dan kondisi fisik mereka. Dataset ini terdiri dari 17 atribut dan 2111 data entri, di mana setiap entri telah diberi label pada variabel kelas NObesity (Tingkat Obesitas). Label tersebut mengklasifikasikan data ke dalam kategori: Kekurangan Berat Badan, Berat Normal, Kelebihan Berat Level I, Kelebihan Berat Level II, Obesitas Tipe I, Obesitas Tipe II, dan Obesitas Tipe III.
