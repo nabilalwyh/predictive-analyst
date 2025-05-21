@@ -291,12 +291,26 @@ Berikut adalah program untuk melakukan one hot encoding.
 </p>
 
 ## Modeling
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+### 1. Algoritma XGBoost
+XGBoost (Extreme Gradient Boosting) adalah algoritma machine learning berbasis teknik gradient boosting yang sangat populer dan efisien untuk masalah klasifikasi dan regresi. Inti dari XGBoost adalah membangun model secara bertahap dengan cara menggabungkan banyak decision tree secara berurutan, di mana setiap pohon baru bertujuan untuk memperbaiki kesalahan (residual error) yang dihasilkan oleh model sebelumnya. Dalam model ini, parameter yang digunakan adalah: 
+- max_depth = 5. Menentukan kedalaman maksimum dari setiap pohon keputusan. Pohon dengan kedalaman lebih dalam dapat menangkap pola yang lebih kompleks, tapi juga berisiko menyebabkan overfitting. Dengan max_depth=5, model dibatasi agar setiap pohon tidak terlalu dalam sehingga lebih general.
+- learning_rate. Mengatur besar langkah (step size) setiap pohon baru saat memperbarui model. Learning rate kecil berarti model belajar secara perlahan, mengurangi risiko overfitting, namun memerlukan lebih banyak pohon (n_estimators). Sebaliknya, learning rate besar mempercepat pembelajaran tapi risiko overfitting meningkat.
+- n_estimators = 168. Jumlah total pohon keputusan yang akan dibangun. Semakin banyak pohon, semakin kompleks model dan biasanya akurasi meningkat, tapi waktu komputasi juga lebih lama.
+- random_state = 9. Mengatur seed untuk pengacakan sehingga hasil pelatihan bisa direproduksi (konsisten) saat dijalankan ulang.
+- n_jobs = -1. Mengatur berapa banyak core CPU yang digunakan saat pelatihan. Nilai -1 artinya menggunakan seluruh core yang tersedia untuk mempercepat proses training.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+### 2. Algoritma SVM
+Support Vector Machine (SVM) adalah algoritma supervised learning yang populer untuk klasifikasi dan regresi. Tujuan utama SVM adalah mencari sebuah hyperplane (garis atau bidang pemisah) terbaik yang dapat memisahkan kelas-kelas data dengan margin terbesar. Margin ini adalah jarak terdekat antara hyperplane dengan titik data dari masing-masing kelas. Dalam model ini, parameter yang digunakan adalah: 
+- kernel='rbf'. Menentukan tipe kernel yang digunakan, di sini adalah Radial Basis Function yang memungkinkan model membentuk batas pemisah non-linear yang fleksibel.
+- random_state=42. Menetapkan seed untuk pengacakan internal agar proses pelatihan bersifat deterministik dan hasilnya bisa direproduksi secara konsisten di setiap eksekusi ulang.
+
+### 3. 
+Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikasi dan regresi. Algoritma ini menggabungkan banyak pohon keputusan (decision trees) secara bersamaan untuk membuat prediksi yang lebih akurat dan stabil dibandingkan menggunakan satu pohon saja. Dalam model ini, parameter yang digunakan adalah: 
+- n_estimators=100: artinya akan membangun sebanyak 100 pohon dalam proses pelatihan. Semakin banyak jumlah pohon, biasanya model menjadi lebih akurat dan stabil karena hasil akhir merupakan agregasi dari banyak pohon, namun waktu pelatihan juga akan lebih lama.
+- Parameter criterion="entropy" menunjukkan bahwa pemisahan data di setiap simpul pohon akan didasarkan pada nilai information gain, yang berasal dari teori informasi. Entropy digunakan untuk mengukur ketidakpastian, dan model akan berusaha meminimalkan ketidakpastian ini di setiap split data. Meskipun proses ini sedikit lebih lambat dibandingkan dengan kriteria lain seperti Gini, pemilihan entropy sering kali memberikan hasil prediksi yang lebih baik dalam kasus tertentu.
+- max_depth=10: Menentukan kedalaman maksimum setiap pohon dalam hutan. ini diterapkan untuk mencegah overfitting, yaitu kondisi ketika model terlalu menyesuaikan diri terhadap data pelatihan dan tidak mampu menggeneralisasi dengan baik terhadap data baru. Dengan membatasi kedalaman, model hanya boleh membelah data hingga 10 tingkat saja, sehingga pola yang dipelajari cukup dalam namun tidak terlalu kompleks.
+- random_state=50: digunakan untuk memastikan hasil pelatihan model bisa direproduksi. Dalam konteks pembelajaran mesin, penggunaan random state yang tetap akan menghasilkan hasil yang konsisten setiap kali model dijalankan, karena proses internal seperti pemilihan sampel acak akan menggunakan seed yang sama.
+- n_jobs=-1: Menentukan jumlah inti (cores) yang digunakan untuk menghitung. Jika diatur ke -1, model akan menggunakan semua inti yang tersedia, sehingga mempercepat proses pelatihan.
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
