@@ -321,6 +321,7 @@ Confusion matrix adalah sebuah tabel yang digunakan untuk menggambarkan performa
 - False Positive (FP): Jumlah data yang sebenarnya negatif tetapi diprediksi sebagai positif (disebut juga Type I Error).
 - True Negative (TN): Jumlah data yang benar-benar negatif dan diprediksi sebagai negatif.
 - False Negative (FN): Jumlah data yang sebenarnya positif tetapi diprediksi sebagai negatif (Type II Error).
+
 **Dari confusion matrix, dapat dihitung metrik evaluasi:**
 - Akurasi = (TP + TN) / (TP + TN + FP + FN)
     → Mengukur seberapa banyak prediksi yang benar dibandingkan total prediksi.
