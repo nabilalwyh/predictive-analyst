@@ -319,13 +319,13 @@ Dalam proyek ini, evaluasi model dilakukan dengan menggunakan confusion matrix, 
   <img src="https://github.com/user-attachments/assets/c22ceb33-a882-4de4-ab66-c8e663e5c7e3" width="1000"/>
 </p>
 Menggunakan XGBoost dimaknai:
-1. 59 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar.
-2. 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
-3. 68 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara 4 responden Obesity Type I diklasifikasikan salah sebagai Obesity Type II.
-4. 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
-5. 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
-6. 45 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar.
-7. 64 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, namun ada 1 responden Overweight Level II yang salah diklasifikasikan sebagai Normal Weight.
+- 59 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar.
+- 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
+- 68 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara 4 responden Obesity Type I diklasifikasikan salah sebagai Obesity Type II.
+- 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
+- 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
+- 45 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar.
+- 64 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, namun ada 1 responden Overweight Level II yang salah diklasifikasikan sebagai Normal Weight.
 
 ### 2. Algoritma SVM
 <p align="center">
@@ -352,13 +352,13 @@ Menggunakan SVM dimaknai:
   <img src="https://github.com/user-attachments/assets/398bec10-6e8c-440e-99aa-eac4261b2019" width="1000"/>
 </p>
 Menggunakan Random Forest dimaknai:
-1. 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
-2. 42 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar, namun 2 responden salah diklasifikasikan sebagai Normal Weight, dan 1 responden sebagai Overweight Level II.
-3. 62 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight, dan 2 responden sebagai Overweight Level I.
-4. 71 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Insufficient Weight.
-5. 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
-6. 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
-7. 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
+- 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
+- 42 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar, namun 2 responden salah diklasifikasikan sebagai Normal Weight, dan 1 responden sebagai Overweight Level II.
+- 62 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight, dan 2 responden sebagai Overweight Level I.
+- 71 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Insufficient Weight.
+- 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
+- 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
+- 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
   
 Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
 
