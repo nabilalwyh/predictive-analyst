@@ -59,8 +59,10 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 | MTRANS                       | Moda transportasi yang biasa digunakan sehari-hari                                                     |
 | NObeyesdad                   | Tingkat obesitas (target prediksi)                                                                     |
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+### Exploratory Data Analysis - Univariate Analysis
+Melakukan Univeariate Analysis untuk numerical dan categorical features.
+  > numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+  > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad']
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
