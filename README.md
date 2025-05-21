@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Nama Anda
+# Laporan Proyek Machine Learning - Nabila Alawiyah
 
 ## Domain Proyek
 Obesitas adalah kondisi medis yang ditandai oleh akumulasi lemak tubuh yang berlebihan, yang dapat meningkatkan risiko berbagai penyakit kronis seperti diabetes tipe 2, penyakit jantung, hipertensi, dan beberapa jenis kanker. Di Indonesia, obesitas telah menjadi masalah kesehatan masyarakat yang signifikan, dengan prevalensi yang terus meningkat dalam beberapa tahun terakhir.
@@ -61,9 +61,9 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 
 ### Exploratory Data Analysis - Univariate Analysis
 Melakukan Univeariate Analysis untuk numerical dan categorical features.
-  > numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
-  >
-  > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
+      > numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+      >
+      > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
 
 **Numerical Features**
 ![image](https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64)
