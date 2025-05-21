@@ -304,7 +304,7 @@ Support Vector Machine (SVM) adalah algoritma supervised learning yang populer u
 - kernel='rbf'. Menentukan tipe kernel yang digunakan, di sini adalah Radial Basis Function yang memungkinkan model membentuk batas pemisah non-linear yang fleksibel.
 - random_state=42. Menetapkan seed untuk pengacakan internal agar proses pelatihan bersifat deterministik dan hasilnya bisa direproduksi secara konsisten di setiap eksekusi ulang.
 
-### 3. 
+### 3. Algoritma Random Forest
 Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikasi dan regresi. Algoritma ini menggabungkan banyak pohon keputusan (decision trees) secara bersamaan untuk membuat prediksi yang lebih akurat dan stabil dibandingkan menggunakan satu pohon saja. Dalam model ini, parameter yang digunakan adalah: 
 - n_estimators=100: artinya akan membangun sebanyak 100 pohon dalam proses pelatihan. Semakin banyak jumlah pohon, biasanya model menjadi lebih akurat dan stabil karena hasil akhir merupakan agregasi dari banyak pohon, namun waktu pelatihan juga akan lebih lama.
 - Parameter criterion="entropy" menunjukkan bahwa pemisahan data di setiap simpul pohon akan didasarkan pada nilai information gain, yang berasal dari teori informasi. Entropy digunakan untuk mengukur ketidakpastian, dan model akan berusaha meminimalkan ketidakpastian ini di setiap split data. Meskipun proses ini sedikit lebih lambat dibandingkan dengan kriteria lain seperti Gini, pemilihan entropy sering kali memberikan hasil prediksi yang lebih baik dalam kasus tertentu.
