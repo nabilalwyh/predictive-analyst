@@ -117,6 +117,27 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   >
   > - Orang tanpa riwayat keluarga overweight lebih banyak berada di kategori berat badan kurang (Insufficient Weight)
 
+#### 2. Membandingkan level obesitas dengan umur
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/79b7d659-6e15-4c04-949a-ba5942b54a92" width="600"/>
+</p>
+
+  > **Insight:**
+  > - Obesitas bisa terjadi di segala usia, tetapi lebih umum pada usia 20–35 tahun
+  > - Kategori Obesity_Type_III paling terkonsentrasi di usia sekitar 21–27 tahun
+  > - Usia muda memiliki variasi status berat badan yang tinggi, mulai dari kekurangan hingga kelebihan berat badan.
+
+#### 3. Membandingkan level obesitas dengan pola konsumsi makan
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/00a4ab93-1270-4189-99b9-3b9da5645fe2" width="600"/>
+</p>
+
+  > **Insight:**
+  > - Obesitas bisa terjadi di segala usia, tetapi lebih umum pada usia 20–35 tahun
+  > - Kategori Obesity_Type_III paling terkonsentrasi di usia sekitar 21–27 tahun
+  > - Usia muda memiliki variasi status berat badan yang tinggi, mulai dari kekurangan hingga kelebihan berat badan.
+
+
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
