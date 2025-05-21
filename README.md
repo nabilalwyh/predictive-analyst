@@ -69,8 +69,10 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 ### Exploratory Data Analysis - Univariate Analysis
 Melakukan Univeariate Analysis untuk numerical dan categorical features.
 
-**1. Numerical Features**
+#### 1. Numerical Features
+
 Numerical Features pada dataset ini terdiri atas: ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64" width="1000"/>
 </p>
