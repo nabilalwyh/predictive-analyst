@@ -177,21 +177,21 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 ### Menangani Data Duplikat
 #### 1. Menghitung jumlah data duplikat
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="800"/>
+  <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="400"/>
 </p>
 
   > Berdasarkan program di atas, maka diketahui bahwa terdapat 24 data duplikat.
 
 #### 2. Menampilkan baris data yang duplikat 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/afd8eed2-7105-4cce-b8a8-0f0f5bf9e561" width="800"/>
+  <img src="https://github.com/user-attachments/assets/afd8eed2-7105-4cce-b8a8-0f0f5bf9e561" width="1000"/>
 </p>
   
   > Dari hasil di atas, terlihat bahwa ada data-data tersebut memang terduplikasi. Oleh karena itu, data duplikat ini akan dihapus.
 
 #### 3. Menghapus baris data yang duplikat 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="800"/>
+  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="400"/>
 </p>
   
   > Setelah program di atas dijalankan, maka sudah tidak ada lagi data yang duplikat.
