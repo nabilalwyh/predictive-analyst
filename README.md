@@ -66,7 +66,7 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 | NObeyesdad                   | Tingkat obesitas (target prediksi)                                                                     |
 
 ### Exploratory Data Analysis - Univariate Analysis
-Melakukan Univeariate Analysis untuk numerical dan categorical features.
+Melakukan Univariate Analysis untuk numerical dan categorical features.
 
 #### 1. Numerical Features
 
@@ -174,11 +174,27 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > - BMI merupakan indikator yang sangat kuat dan konsisten dalam membedakan level obesitas.
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+### Menangani Data Duplikat
+#### 1. Menghitung jumlah data duplikat
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="200"/>
+</p>
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+  > Berdasarkan program di atas, maka diketahui bahwa terdapat 24 data duplikat.
+
+#### 2. Menampilkan baris data yang duplikat 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/afd8eed2-7105-4cce-b8a8-0f0f5bf9e561" width="800"/>
+</p>
+  
+  > Dari hasil di atas, terlihat bahwa ada data-data tersebut memang terduplikasi. Oleh karena itu, data duplikat ini akan dihapus.
+
+#### 3. Menghapus baris data yang duplikat 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="200"/>
+</p>
+  
+  > Setelah program di atas dijalankan, maka sudah tidak ada lagi data yang duplikat.
 
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
