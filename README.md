@@ -133,10 +133,36 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 </p>
 
   > **Insight:**
-  > - Obesitas bisa terjadi di segala usia, tetapi lebih umum pada usia 20–35 tahun
-  > - Kategori Obesity_Type_III paling terkonsentrasi di usia sekitar 21–27 tahun
-  > - Usia muda memiliki variasi status berat badan yang tinggi, mulai dari kekurangan hingga kelebihan berat badan.
+  > - Konsumsi makanan berkalori tinggi (FAVC) berkorelasi positif dengan peningkatan tingkat obesitas.
+  > - Meskipun kebiasaan ngemil lebih sering ditemukan pada individu obesitas (terutama tipe ringan hingga sedang), namun kategori Insufficient Weight juga menunjukkan frekuensi ngemil yang tinggi, yang menunjukkan bahwa frekuensi ngemil saja tidak cukup menjelaskan obesitas — perlu dilihat juga jenis camilan dan pola konsumsi lainnya.
+  > - Rata-rata semua kategori obesitas memiliki jumlah makan utama sekitar 3 kali/hari, mirip dengan kategori berat badan normal. Tapi, Insufficient Weight memiliki sebaran nilai lebih tinggi (hingga 4× sehari).
+  > - Konsumsi sayur tidak signifikan membedakan level obesitas; banyak individu obesitas tetap mengonsumsi sayur.
+  > - Faktor yang paling kuat berhubungan dengan obesitas dari visualisasi ini adalah FAVC (makanan tinggi kalori), diikuti oleh CAEC (ngemil di luar waktu makan utama). Sedangkan jumlah makan utama (NCP) dan konsumsi sayur (FCVC) memiliki pengaruh yang tidak begitu jelas terhadap level obesitas berdasarkan grafik ini.
+ 
+#### 4. Membandingkan kondisi level obesitas dengan kebiasaan merokok dan konsumsi alkohol
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/db3eed58-8d94-4557-9451-b516e6eb8ff0" width="600"/>
+</p>
 
+  > **Insight:**
+  > - Level obesitas seseorang tidak ditentukan dengan kebiasaan merokok.
+  > - Konsumsi alkohol kadang-kadang (Sometimes) paling banyak terjadi pada semua kategori obesitas, termasuk kategori obesitas tertinggi (Obesity_Type_III). Responden yang tidak minum alkohol (CALC = no) mendominasi beberapa kategori awal (seperti Normal_Weight dan Obesity_Type_I), tetapi jumlahnya menurun drastis pada level obesitas paling tinggi.
+
+#### 5. Membandingkan kondisi level obesitas dengan Moda transportasi yang biasa digunakan sehari-hari
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e694aa4a-6418-4508-8ecb-a92b036a17c1" width="600"/>
+</p>
+
+  > **Insight:**
+  > - Transportasi yang tidak aktif secara fisik (seperti public transportation dan mobil pribadi) lebih umum digunakan oleh individu dengan tingkat obesitas lebih tinggi. Sebaliknya, orang yang memilih berjalan kaki atau bersepeda cenderung memiliki berat badan normal atau malah kurang.
+
+#### 6. Membandingkan kondisi level obesitas dengan kebiasaan memantau kalori
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a251a912-c017-46f1-81d0-843e90cab49e" width="600"/>
+</p>
+
+  > **Insight:**
+  > - Responden dengan level obesitas tipe 3 tidak ada yang melakukan perhitungan jumlah kalori, sementara pada level lainnya beberapa melakukan hal tersebut.
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
