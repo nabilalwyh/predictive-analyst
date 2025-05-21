@@ -65,7 +65,7 @@ Melakukan Univeariate Analysis untuk numerical dan categorical features.
 >
 > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
 
-**Numerical Features**
+**1. Numerical Features**
 ![image](https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64)
 Gambar di atas dapat diinterpretasikan sebagai berikut.
 1. Plot jumlah berdasarkan `Gender` menunjukkan bahwa jumlah responden pria dan wanita relatif seimbang.
@@ -78,7 +78,7 @@ Gambar di atas dapat diinterpretasikan sebagai berikut.
 8. Plot jumlah berdasarkan `Mode of Transportation (MTRANS)` menunjukkan bahwa mayoritas responden menggunakan transportasi umum dalam kegiatan sehari-hari.
 9. Plot jumlah berdasarkan `Obesity Levels (NObeyesdad)` menunjukkan distribusi kelas yang cukup merata, dengan kategori Overweight Level II sebagai yang paling banyak, diikuti oleh Obesity Type III.
 
-**Categorical Features**
+**2. Categorical Features**
 ![image](https://github.com/user-attachments/assets/4b4ed0ff-a075-4a64-b6a1-176714991d84)
 Gambar di atas dapat diinterpretasikan sebagai berikut.
 1. Histogram dari `Height` menunjukkan distribusi yang mendekati normal,
@@ -90,6 +90,13 @@ Gambar di atas dapat diinterpretasikan sebagai berikut.
 7. Histogram `TUE` (durasi penggunaan teknologi) juga menunjukkan nilai yang rendah pada sebagian besar responden, yang mengindikasikan bahwa mereka jarang menggunakan perangkat teknologi dalam keseharian.
 8. Histogram `Age` memiliki distribusi yang miring ke kanan (right-skewed), yang berarti sebagian besar responden berusia muda, atau berada di bawah rata-rata usia keseluruhan.
 
+### Exploratory Data Analysis - Multivariate Analysis
+**1. Membandingkan kondisi level obesitas dengan riwayat kelebihan berat badan**
+![image](https://github.com/user-attachments/assets/346d24c2-46dc-447d-b6ed-b3efe423d895)
+  > **Insight:**
+  > * Mayoritas penderita obesitas memiliki riwayat keluarga overweight
+  >
+  > * Orang tanpa riwayat keluarga overweight lebih banyak berada di kategori berat badan kurang (Insufficient Weight)
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
