@@ -36,7 +36,14 @@ Tujuan yang ingin dicapai dalam proyek ini adalah memprediksi level diabetes ses
 Metrik yang digunakan untuk mengevaluasi seberapa baik model klasifikasi merupakan confusion matrix. confusion matrix merupakan suatu metode yang digunakan untuk melakukan perhitungan akurasi pada konsep data mining.
 
 ## Data Understanding
-Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari platform open source Kaggle dan dipublikasikan oleh fatemehmehrparvar. Dataset ini mencakup data untuk memperkirakan tingkat obesitas pada individu yang berasal dari negara Meksiko, Peru, dan Kolombia, berdasarkan kebiasaan makan dan kondisi fisik mereka. Dataset ini terdiri dari 17 atribut dan 2111 data entri, di mana setiap entri telah diberi label pada variabel kelas NObesity (Tingkat Obesitas). Label tersebut mengklasifikasikan data ke dalam kategori: Kekurangan Berat Badan, Berat Normal, Kelebihan Berat Level I, Kelebihan Berat Level II, Obesitas Tipe I, Obesitas Tipe II, dan Obesitas Tipe III.
+Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari platform open source Kaggle dan dipublikasikan oleh fatemehmehrparvar. Dataset ini mencakup data untuk memperkirakan tingkat obesitas pada individu yang berasal dari negara Meksiko, Peru, dan Kolombia, berdasarkan kebiasaan makan dan kondisi fisik mereka. Dataset ini terdiri dari 17 atribut dan 2111 data entri, di mana setiap entri telah diberi label pada variabel kelas NObesity (Tingkat Obesitas). Label tersebut mengklasifikasikan data ke dalam kategori: 
+- Kekurangan Berat Badan,
+- Berat Normal,
+- Kelebihan Berat Level I,
+- Kelebihan Berat Level II,
+- Obesitas Tipe I,
+- Obesitas Tipe II,
+- Obesitas Tipe III.
 
 ### Variabel-variabel yang memengaruhi level diabetes seseorang adalah sebagai berikut:
 | Variabel                      | Keterangan                                                                                             |
@@ -61,12 +68,12 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 
 ### Exploratory Data Analysis - Univariate Analysis
 Melakukan Univeariate Analysis untuk numerical dan categorical features.
-> numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
->
-> categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
 
 **1. Numerical Features**
-![image](https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64)
+Numerical Features pada dataset ini terdiri atas: ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64" width="600"/>
+</p>
 Gambar di atas dapat diinterpretasikan sebagai berikut.
 1. Plot jumlah berdasarkan `Gender` menunjukkan bahwa jumlah responden pria dan wanita relatif seimbang.
 2. Plot jumlah berdasarkan `Family History with Overweight` menunjukkan bahwa mayoritas responden memiliki riwayat keluarga yang mengalami kelebihan berat badan.
