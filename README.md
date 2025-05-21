@@ -105,12 +105,17 @@ Gambar di atas dapat diinterpretasikan sebagai berikut.
 8. Histogram `Age` memiliki distribusi yang miring ke kanan (right-skewed), yang berarti sebagian besar responden berusia muda, atau berada di bawah rata-rata usia keseluruhan.
 
 ### Exploratory Data Analysis - Multivariate Analysis
-**1. Membandingkan kondisi level obesitas dengan riwayat kelebihan berat badan**
-![image](https://github.com/user-attachments/assets/346d24c2-46dc-447d-b6ed-b3efe423d895)
+Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
+
+### 1. Membandingkan kondisi level obesitas dengan riwayat kelebihan berat badan
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/346d24c2-46dc-447d-b6ed-b3efe423d895" width="1000"/>
+</p>
+
   > **Insight:**
-  > * Mayoritas penderita obesitas memiliki riwayat keluarga overweight
+  > - Mayoritas penderita obesitas memiliki riwayat keluarga overweight
   >
-  > * Orang tanpa riwayat keluarga overweight lebih banyak berada di kategori berat badan kurang (Insufficient Weight)
+  > - Orang tanpa riwayat keluarga overweight lebih banyak berada di kategori berat badan kurang (Insufficient Weight)
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
