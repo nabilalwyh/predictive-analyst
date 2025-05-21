@@ -333,7 +333,7 @@ Confusion matrix adalah sebuah tabel yang digunakan untuk menggambarkan performa
 - F1 Score = 2 × (Precision × Recall) / (Precision + Recall)
     → Rata-rata harmonis antara precision dan recall, berguna saat distribusi kelas tidak seimbang.
 
-
+**Contoh penerapan:**
   
 ### 1. Algoritma XGBoost
 <p align="center">
@@ -384,14 +384,28 @@ Menggunakan Random Forest dimaknai:
 - 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
 - 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
   
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
+## Kesimpulan
+### 1. Mengetahui faktor apa saja yang paling berpengaruh terhadap tingkat obesitas seseorang
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d292fdb0-77f6-40fb-85bd-61a29c94741c" width="600"/>
+</p>
+Berdasarkan grafik di atas, 3 faktor yang paling memengaruhi level obesitas seseorang adalah BMI, seorang perempuan, dan sering mengonsumsi makanan tinggi kalori (FAVC)
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+### 2. Mengetahui cara memanfaatkan informasi pola hidup guna memprediksi kategori diabetes pada seseorang
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bd0e969e-47b6-4f55-95b6-c4546f211a74" width="600"/>
+</p>
+Berdasarkan data yang diinput oleh pengguna berusia 21 tahun dengan tinggi badan 1,5 meter dan berat 68 kg, diketahui bahwa pola makan sehari-harinya kurang seimbang — jarang mengonsumsi sayur (skor 1 dari 3), makan tiga kali sehari, dan mengonsumsi sekitar 2 liter air setiap hari. Aktivitas fisik tergolong rendah dengan olahraga hanya 2 jam per minggu dan waktu layar 1 jam per hari. Pengguna sering mengonsumsi makanan tinggi kalori, tidak menghitung asupan kalori, dan tidak merokok. Terdapat riwayat keluarga mengalami kelebihan berat badan, dan pengguna adalah perempuan. Tidak ada konsumsi alkohol, tidak memiliki kebiasaan ngemil di antara waktu makan, serta menggunakan motor sebagai alat transportasi utama. Berdasarkan informasi tersebut, model memprediksi bahwa individu ini masuk dalam kategori Obesitas Tipe 1.
 
-**---Ini adalah bagian akhir laporan---**
+### 3. Mengetahui hubungan bagaimana riwayat obesitas dari keluarga memengaruhi level diabetes seseorang
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5178d4fa-b1e6-4752-b674-c0c760c7b77d" width="600"/>
+</p>
+Berdasarkan analisis di atas, dapat dikeathui bahwa individu dengan riwayat obesitas keluarga memiliki kemungkinan jauh lebih besar untuk mengalami obesitas sedang hingga berat dibandingkan individu tanpa riwayat tersebut.
 
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
 
+## Refrensi
+1. Suha, G. R., & Rosyada, A. (2022). Faktor-faktor yang berhubungan dengan kejadian obesitas pada remaja umur 13–15 tahun di Indonesia (analisis lanjut data Riskesdas 2018). Ilmu Gizi Indonesia, 6(1), 43.
+2. Batara, A. S. (2018). Healthy Setting Ruang Publik Perkotaan: Sebuah Konsep Terminal Sehat. CV. Social Politic Genius (SIGn).
+3. Rahmani, A., & Nadhiroh, S. R. (2024). Upaya yang Dilakukan Beberapa Negara ASEAN untuk Mengatasi Obesitas Anak dan Remaja dalam Program Berbasis Sekolah: Tinjauan Sistematis. Amerta Nutrition, 8(1), 151-160.
+4. Pratama, B. A. (2023). Literature Review: Faktor risiko obesitas pada remaja di indonesia. Indonesian Journal on Medical Science, 10(2).
