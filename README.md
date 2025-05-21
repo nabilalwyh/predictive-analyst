@@ -61,9 +61,9 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 
 ### Exploratory Data Analysis - Univariate Analysis
 Melakukan Univeariate Analysis untuk numerical dan categorical features.
-      > numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
-      >
-      > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
+> numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
+>
+> categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
 
 **Numerical Features**
 ![image](https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64)
