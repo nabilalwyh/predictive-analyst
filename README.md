@@ -63,9 +63,33 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 Melakukan Univeariate Analysis untuk numerical dan categorical features.
   > numerical_feature = ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH2O', 'FAF', 'TUE']
   >
-  > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad']
+  > categorical_feature = ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad'] 
+
 **Numerical Features**
 ![image](https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64)
+Gambar di atas dapat diinterpretasikan sebagai berikut.
+1. Plot jumlah berdasarkan `Gender` menunjukkan bahwa jumlah responden pria dan wanita relatif seimbang.
+2. Plot jumlah berdasarkan `Family History with Overweight` menunjukkan bahwa mayoritas responden memiliki riwayat keluarga yang mengalami kelebihan berat badan.
+3. Plot jumlah berdasarkan `High Caloric Food Consumption (FAVC)` menunjukkan bahwa sebagian besar responden sering mengonsumsi makanan tinggi kalori.
+4. Plot jumlah berdasarkan `Food Consumption Between Meals (CAEC)` menunjukkan bahwa sebagian besar responden kadang-kadang mengonsumsi camilan di antara waktu makan.
+5. Plot jumlah berdasarkan `Smoke` menunjukkan bahwa mayoritas responden tidak merokok.
+6. Plot jumlah berdasarkan `Calorie Monitoring (SCC)` menunjukkan bahwa sebagian besar responden tidak memantau jumlah kalori yang mereka konsumsi.
+7. Plot jumlah berdasarkan `Alcohol Consumption Frequency (CALC)` menunjukkan bahwa sebagian besar responden kadang-kadang mengonsumsi alkohol, disusul oleh mereka yang tidak mengonsumsinya sama sekali.
+8. Plot jumlah berdasarkan `Mode of Transportation (MTRANS)` menunjukkan bahwa mayoritas responden menggunakan transportasi umum dalam kegiatan sehari-hari.
+9. Plot jumlah berdasarkan `Obesity Levels (NObeyesdad)` menunjukkan distribusi kelas yang cukup merata, dengan kategori Overweight Level II sebagai yang paling banyak, diikuti oleh Obesity Type III.
+
+**Categorical Features**
+![image](https://github.com/user-attachments/assets/4b4ed0ff-a075-4a64-b6a1-176714991d84)
+Gambar di atas dapat diinterpretasikan sebagai berikut.
+1. Histogram dari `Height` menunjukkan distribusi yang mendekati normal,
+2. Histogram dari `Weight` memiliki distribusi yang lebih bervariasi.
+3. Histogram `FCVC` (frekuensi konsumsi sayur) menunjukkan tren kuat pada nilai 2 dan 3, yang berarti sebagian besar responden cukup sering mengonsumsi sayur.
+4. Histogram `NCP` (jumlah makan per hari) menunjukkan mayoritas responden makan 3 kali sehari.
+5. Histogram dari `CH2O` (konsumsi air) menunjukkan mayoritas responden minum sekitar 2 liter air per hari.
+6. Histogram `FAF` (frekuensi aktivitas fisik) menunjukkan bahwa sebagian besar responden memiliki tingkat aktivitas fisik yang rendah, mendekati angka 0.
+7. Histogram `TUE` (durasi penggunaan teknologi) juga menunjukkan nilai yang rendah pada sebagian besar responden, yang mengindikasikan bahwa mereka jarang menggunakan perangkat teknologi dalam keseharian.
+8. Histogram `Age` memiliki distribusi yang miring ke kanan (right-skewed), yang berarti sebagian besar responden berusia muda, atau berada di bawah rata-rata usia keseluruhan.
+
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
