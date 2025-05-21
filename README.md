@@ -141,7 +141,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
  
 #### 4. Membandingkan kondisi level obesitas dengan kebiasaan merokok dan konsumsi alkohol
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/db3eed58-8d94-4557-9451-b516e6eb8ff0" width="600"/>
+  <img src="https://github.com/user-attachments/assets/db3eed58-8d94-4557-9451-b516e6eb8ff0" width="1000"/>
 </p>
 
   > **Insight:**
@@ -163,6 +163,15 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
   > **Insight:**
   > - Responden dengan level obesitas tipe 3 tidak ada yang melakukan perhitungan jumlah kalori, sementara pada level lainnya beberapa melakukan hal tersebut.
+
+#### 7. Mengetahui distribusi BMI
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4319c8a2-3300-4808-8093-563e762f28e9" width="600"/>
+</p>
+
+  > **Insight:**
+  > - Semakin tinggi level obesitas, semakin tinggi pula nilai median dan sebaran BMI-nya.
+  > - BMI merupakan indikator yang sangat kuat dan konsisten dalam membedakan level obesitas.
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
