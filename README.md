@@ -313,12 +313,53 @@ Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikas
 - n_jobs=-1: Menentukan jumlah inti (cores) yang digunakan untuk menghitung. Jika diatur ke -1, model akan menggunakan semua inti yang tersedia, sehingga mempercepat proses pelatihan.
 
 ## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+Dalam proyek ini, evaluasi model dilakukan dengan menggunakan confusion matrix, akurasi, dan f1 score sebagai metrik penilaian untuk setiap model. Sebelum itu, akan dijelaskan terlebih dahulu cara menghitung akurasi dan f1 score serta cara memanfaatkan confusion matrix.
+### 1. Algoritma XGBoost
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c22ceb33-a882-4de4-ab66-c8e663e5c7e3" width="1000"/>
+</p>
+Menggunakan XGBoost dimaknai:
+1. 59 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar.
+2. 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
+3. 68 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara 4 responden Obesity Type I diklasifikasikan salah sebagai Obesity Type II.
+4. 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
+5. 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
+6. 45 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar.
+7. 64 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, namun ada 1 responden Overweight Level II yang salah diklasifikasikan sebagai Normal Weight.
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+### 2. Algoritma SVM
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e8a92b68-bf70-4deb-bfad-89c991748a54" width="1000"/>
+</p>
+Menggunakan SVM dimaknai:
+1. 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
+2. 22 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar, namun:
+  * 5 responden salah diklasifikasikan sebagai Insufficient Weight.
+  * 11 responden salah diklasifikasikan sebagai Overweight Level I.
+3. 65 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara:
+  * 4 responden salah diklasifikasikan sebagai Obesity Type II.
+  * 3 responden salah diklasifikasikan sebagai Overweight Level II.
+4. 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
+5. 75 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar, sementara 5 responden salah diklasifikasikan sebagai Obesity Type II.
+6. 41 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar, namun 4 responden salah diklasifikasikan sebagai Overweight Level II.
+7. 54 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, namun:
+  * 2 responden salah diklasifikasikan sebagai Obesity Type I.
+  * 9 responden salah diklasifikasikan sebagai Overweight Level I.
 
+
+### 3. Algoritma Random Forest
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/398bec10-6e8c-440e-99aa-eac4261b2019" width="1000"/>
+</p>
+Menggunakan Random Forest dimaknai:
+1. 38 responden dengan kondisi Normal Weight telah diklasifikasikan dengan benar.
+2. 42 responden dengan kondisi Overweight Level I telah diklasifikasikan dengan benar, namun 2 responden salah diklasifikasikan sebagai Normal Weight, dan 1 responden sebagai Overweight Level II.
+3. 62 responden dengan kondisi Overweight Level II telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight, dan 2 responden sebagai Overweight Level I.
+4. 71 responden dengan kondisi Obesity Type I telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Insufficient Weight.
+5. 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
+6. 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
+7. 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
+  
 Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
