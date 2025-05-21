@@ -107,9 +107,9 @@ Gambar di atas dapat diinterpretasikan sebagai berikut.
 ### Exploratory Data Analysis - Multivariate Analysis
 Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
-### 1. Membandingkan kondisi level obesitas dengan riwayat kelebihan berat badan
+#### 1. Membandingkan kondisi level obesitas dengan riwayat kelebihan berat badan
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/346d24c2-46dc-447d-b6ed-b3efe423d895" width="1000"/>
+  <img src="https://github.com/user-attachments/assets/346d24c2-46dc-447d-b6ed-b3efe423d895" width="600"/>
 </p>
 
   > **Insight:**
