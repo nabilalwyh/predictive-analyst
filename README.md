@@ -74,6 +74,7 @@ Numerical Features pada dataset ini terdiri atas: ['Age', 'Height', 'Weight', 'F
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5763ba41-1a43-42b7-ae39-8884b98c1b64" width="1000"/>
 </p>
+
 Gambar di atas dapat diinterpretasikan sebagai berikut.
 1. Plot jumlah berdasarkan `Gender` menunjukkan bahwa jumlah responden pria dan wanita relatif seimbang.
 2. Plot jumlah berdasarkan `Family History with Overweight` menunjukkan bahwa mayoritas responden memiliki riwayat keluarga yang mengalami kelebihan berat badan.
