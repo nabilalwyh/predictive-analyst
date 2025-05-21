@@ -23,7 +23,6 @@ Berdasarkan problem statements, berikut tujuan yang ingin dicapai pada proyek in
 2. Mengetahui cara memanfaatkan informasi pola hidup guna memprediksi kategori diabetes pada seseorang
 3. Mengetahui hubungan bagaimana riwayat obesitas dari keluarga memengaruhi level diabetes seseorang
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
 ### Solution statements
 1. Melakukan analisis statistik atau membangun model machine learning untuk mengukur seberapa kuat hubungan dan kontribusi tiap faktor terhadap target (tingkat obesitas), sehingga faktor-faktor utama yang paling berpengaruh dapat diidentifikasi.
 2. Menerapkan berbagai algoritma machine learning dan membandingkan hasil performanya untuk menemukan model dengan akurasi terbaik dalam memprediksi tingkat obesitas berdasarkan riwayat kesehatan dan aktivitas seseorang, kemudian menggunakan model terbaik tersebut untuk melakukan prediksi (inference).
@@ -88,8 +87,13 @@ Gambar di atas dapat diinterpretasikan sebagai berikut.
 8. Plot jumlah berdasarkan `Mode of Transportation (MTRANS)` menunjukkan bahwa mayoritas responden menggunakan transportasi umum dalam kegiatan sehari-hari.
 9. Plot jumlah berdasarkan `Obesity Levels (NObeyesdad)` menunjukkan distribusi kelas yang cukup merata, dengan kategori Overweight Level II sebagai yang paling banyak, diikuti oleh Obesity Type III.
 
-**2. Categorical Features**
-![image](https://github.com/user-attachments/assets/4b4ed0ff-a075-4a64-b6a1-176714991d84)
+#### 2. Categorical Features
+Categorical Features pada dataset ini terdiri atas: ['Gender', 'family_history_with_overweight', 'FAVC', 'CAEC', 'SMOKE', 'SCC', 'CALC', 'MTRANS', 'NObeyesdad']
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4b4ed0ff-a075-4a64-b6a1-176714991d84" width="1000"/>
+</p>
+
 Gambar di atas dapat diinterpretasikan sebagai berikut.
 1. Histogram dari `Height` menunjukkan distribusi yang mendekati normal,
 2. Histogram dari `Weight` memiliki distribusi yang lebih bervariasi.
