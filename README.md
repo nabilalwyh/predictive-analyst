@@ -45,26 +45,25 @@ Dataset yang digunakan untuk memprediksi tingkat diabetes seseorang diambil dari
 - Obesitas Tipe III.
 
 ### Variabel-variabel yang memengaruhi level diabetes seseorang adalah sebagai berikut:
-| Variabel                      | Keterangan                                                                                             |
-|-------------------------------|--------------------------------------------------------------------------------------------------------|
-| Gender                       | Jenis kelamin                                                                                          |
-| Age                          | Usia (dalam tahun)                                                                                     |
-| Height                       | Tinggi badan (dalam meter)                                                                             |
-| Weight                       | Berat badan (dalam kilogram)                                                                           |
-| family_history_with_overweight | Apakah ada anggota keluarga yang menderita atau pernah menderita kelebihan berat badan?                |
-| FAVC                         | Apakah sering mengonsumsi makanan berkalori tinggi?                                                    |
-| FCVC                         | Apakah biasanya mengonsumsi sayuran dalam makanan?                                                     |
-| NCP                          | Berapa kali makan utama yang dikonsumsi setiap hari?                                                   |
-| CAEC                         | Apakah mengonsumsi makanan di antara waktu makan utama?                                                |
-| SMOKE                        | Apakah merokok?                                                                                        |
-| CH2O                         | Berapa banyak air yang diminum setiap hari?                                                             |
-| SCC                          | Apakah memantau jumlah kalori yang dikonsumsi setiap hari?                                             |
-| FAF                          | Seberapa sering melakukan aktivitas fisik?                                                             |
-| TUE                          | Berapa lama menggunakan perangkat teknologi (misal: ponsel, video game, TV, komputer) setiap hari?      |
-| CALC                         | Seberapa sering mengonsumsi alkohol?                                                                   |
-| MTRANS                       | Moda transportasi yang biasa digunakan sehari-hari                                                     |
-| NObeyesdad                   | Tingkat obesitas (target prediksi)                                                                     |
-
+| Variabel                          | Keterangan                                                                                         | Contoh Jawaban |
+| --------------------------------- | -------------------------------------------------------------------------------------------------- | -------------- |
+| Gender                            | Jenis kelamin                                                                                      | Female / Male |
+| Age                               | Usia (dalam tahun)                                                                                 | 21.0            |
+| Height                            | Tinggi badan (dalam meter)                                                                         | 1.8        |
+| Weight                            | Berat badan (dalam kilogram)                                                                       | 68.6        |
+| family\_history\_with\_overweight | Apakah ada anggota keluarga yang menderita atau pernah menderita kelebihan berat badan?            | Yes / no        |
+| FAVC                              | Apakah sering mengonsumsi makanan berkalori tinggi?                                                | Yes / no        |
+| FCVC                              | Apakah biasanya mengonsumsi sayuran dalam makanan?                                                 | Yes / no        |
+| NCP                               | Berapa kali makan utama yang dikonsumsi setiap hari?                                               | 1 - 4        |
+| CAEC                              | Seberapa sering makan makanan di antara waktu makan utama?                                         | no, sometimes, frequently, always         |
+| SMOKE                             | Apakah merokok?                                                                                    | Yes / no        |
+| CH2O                              | Berapa banyak air yang diminum setiap hari?                                                        | 1 - 3        |
+| SCC                               | Apakah memantau jumlah kalori yang dikonsumsi setiap hari?                                         | Yes / no        |
+| FAF                               | Seberapa sering melakukan aktivitas fisik?                                                         | 0 - 3        |
+| TUE                               | Seberapa sering menggunakan perangkat teknologi (misal: ponsel, video game, TV, komputer) setiap hari? | 0 - 2        |
+| CALC                              | Seberapa sering mengonsumsi alkohol?                                                               | no, sometimes, frequently, always         |
+| MTRANS                            | Moda transportasi yang biasa digunakan sehari-hari                                                 | Public_Transportation, Walking, Automobile, Motorbike, Bike         |
+| NObeyesdad                        | Tingkat obesitas (target prediksi)                                                                 | Normal_Weight, Overweight_level_I, Overweight_level_II, Obesity_Type_I, Obesity_Type_II, Obesity_Type_III
 ### Exploratory Data Analysis - Univariate Analysis
 Melakukan Univariate Analysis untuk numerical dan categorical features.
 
