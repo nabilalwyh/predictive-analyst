@@ -394,6 +394,8 @@ Menggunakan Random Forest dimaknai:
 | **XGBoost Classifier**  | - Akurasi tinggi<br>- Mendukung regularisasi untuk mengurangi overfitting<br>- Cocok untuk data tidak seimbang | - Proses training lebih lama<br>- Membutuhkan tuning hyperparameter yang cukup kompleks               |
 | **Support Vector Machine (SVM)** | - Efektif untuk data high-dimensional<br>- Cocok untuk dataset kecil dengan margin antar kelas yang jelas | - Kurang efisien pada dataset besar<br>- Pemilihan kernel dan parameter cukup sulit dan sensitif      |
 
+### Pemilihan Model Terbaik
+Berdasarkan hasil evaluasi, model yang dipilih sebagai solusi adalah XGBoost. Karena model ini memiliki nilai akurasi tertinggi. 
 
 ## Kesimpulan
 ### 1. Mengetahui faktor apa saja yang paling berpengaruh terhadap tingkat obesitas seseorang
