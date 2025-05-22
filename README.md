@@ -405,9 +405,17 @@ Berdasarkan hasil evaluasi, model yang dipilih sebagai solusi adalah XGBoost. Ka
 Berdasarkan grafik di atas, 3 faktor yang paling memengaruhi level obesitas seseorang adalah BMI, seorang perempuan, dan sering mengonsumsi makanan tinggi kalori (FAVC)
 
 ### 2. Mengetahui cara memanfaatkan informasi pola hidup guna memprediksi kategori diabetes pada seseorang
+Untuk melakukan prediksi, digunakan model dengan akurasi terbaik yaitu XGBoost, lalu melakukan inference dengan input data baru, menggunakan fungsi di bawah ini menggunakan parameter model dan label_encoder.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fec424f5-031d-4923-a417-8fc07b10a825" width="600"/>
+</p>
+
+Selanjutnya, memanggil fungsi tersebut dengan mengisi parameter model_xgb, le.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bd0e969e-47b6-4f55-95b6-c4546f211a74" width="600"/>
 </p>
+
 Berdasarkan data yang diinput oleh pengguna berusia 21 tahun dengan tinggi badan 1,5 meter dan berat 68 kg, diketahui bahwa pola makan sehari-harinya kurang seimbang — jarang mengonsumsi sayur (skor 1 dari 3), makan tiga kali sehari, dan mengonsumsi sekitar 2 liter air setiap hari. Aktivitas fisik tergolong rendah dengan olahraga hanya 2 jam per minggu dan waktu layar 1 jam per hari. Pengguna sering mengonsumsi makanan tinggi kalori, tidak menghitung asupan kalori, dan tidak merokok. Terdapat riwayat keluarga mengalami kelebihan berat badan, dan pengguna adalah perempuan. Tidak ada konsumsi alkohol, tidak memiliki kebiasaan ngemil di antara waktu makan, serta menggunakan motor sebagai alat transportasi utama. Berdasarkan informasi tersebut, model memprediksi bahwa individu ini masuk dalam kategori Obesitas Tipe 1.
 
 ### 3. Mengetahui hubungan bagaimana riwayat obesitas dari keluarga memengaruhi level diabetes seseorang
