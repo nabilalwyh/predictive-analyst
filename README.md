@@ -385,7 +385,16 @@ Menggunakan Random Forest dimaknai:
 - 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
 - 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
 - 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
-  
+
+### Kelebihan dan Kekurangan Setiap Algoritma
+
+| Algoritma               | Kelebihan                                                                                           | Kekurangan                                                                                           |
+|-------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Random Forest**       | - Tidak mudah overfitting<br>- Mampu menangani data non-linear dan fitur dalam jumlah besar         | - Model kompleks dan sulit diinterpretasi<br>- Memerlukan memori dan waktu komputasi yang besar       |
+| **XGBoost Classifier**  | - Akurasi tinggi<br>- Mendukung regularisasi untuk mengurangi overfitting<br>- Cocok untuk data tidak seimbang | - Proses training lebih lama<br>- Membutuhkan tuning hyperparameter yang cukup kompleks               |
+| **Support Vector Machine (SVM)** | - Efektif untuk data high-dimensional<br>- Cocok untuk dataset kecil dengan margin antar kelas yang jelas | - Kurang efisien pada dataset besar<br>- Pemilihan kernel dan parameter cukup sulit dan sensitif      |
+
+
 ## Kesimpulan
 ### 1. Mengetahui faktor apa saja yang paling berpengaruh terhadap tingkat obesitas seseorang
 <p align="center">
