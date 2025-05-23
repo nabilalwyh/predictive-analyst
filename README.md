@@ -289,6 +289,13 @@ Berikut adalah program untuk melakukan one hot encoding.
   <img src="https://github.com/user-attachments/assets/a6696e54-76eb-4b6c-8fb6-7fcb6b10136a" width="1000"/>
 </p>
 
+### Data Splitting
+Target pada dataset ini adalah variabel `NObeyesdad` untuk mengetahui akurasi prediksi dari NObeyesdad, maka akan menghapus kolom tersebut dari data dan assign kolom tersebut ke variabel baru. Selanjutnya, melakukan split data dengan skema data training sebesar 80% untuk melatih model dan 20% untuk menguji model.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08875066-dc77-4c86-bd28-58c6a5b991f0" width="1000"/>
+</p>
+
+
 ## Modeling
 ### 1. Algoritma XGBoost
 XGBoost (Extreme Gradient Boosting) adalah algoritma machine learning berbasis teknik gradient boosting yang sangat populer dan efisien untuk masalah klasifikasi dan regresi. Inti dari XGBoost adalah membangun model secara bertahap dengan cara menggabungkan banyak decision tree secara berurutan, di mana setiap pohon baru bertujuan untuk memperbaiki kesalahan (residual error) yang dihasilkan oleh model sebelumnya. Dalam model ini, parameter yang digunakan adalah: 
