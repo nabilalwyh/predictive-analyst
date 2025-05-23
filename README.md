@@ -332,6 +332,17 @@ Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikas
 - random_state=50: digunakan untuk memastikan hasil pelatihan model bisa direproduksi. Dalam konteks pembelajaran mesin, penggunaan random state yang tetap akan menghasilkan hasil yang konsisten setiap kali model dijalankan, karena proses internal seperti pemilihan sampel acak akan menggunakan seed yang sama.
 - n_jobs=-1: Menentukan jumlah inti (cores) yang digunakan untuk menghitung. Jika diatur ke -1, model akan menggunakan semua inti yang tersedia, sehingga mempercepat proses pelatihan.
 
+### Kelebihan dan Kekurangan Setiap Algoritma
+
+| Algoritma               | Kelebihan                                                                                           | Kekurangan                                                                                           |
+|-------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Random Forest**       | - Tidak mudah overfitting<br>- Mampu menangani data non-linear dan fitur dalam jumlah besar         | - Model kompleks dan sulit diinterpretasi<br>- Memerlukan memori dan waktu komputasi yang besar       |
+| **XGBoost Classifier**  | - Akurasi tinggi<br>- Mendukung regularisasi untuk mengurangi overfitting<br>- Cocok untuk data tidak seimbang | - Proses training lebih lama<br>- Membutuhkan tuning hyperparameter yang cukup kompleks               |
+| **Support Vector Machine (SVM)** | - Efektif untuk data high-dimensional<br>- Cocok untuk dataset kecil dengan margin antar kelas yang jelas | - Kurang efisien pada dataset besar<br>- Pemilihan kernel dan parameter cukup sulit dan sensitif      |
+
+### Pemilihan Model Terbaik
+Berdasarkan hasil evaluasi, model yang dipilih sebagai solusi adalah XGBoost. Karena model ini memiliki nilai akurasi tertinggi. 
+
 ## Evaluation
 Dalam proyek ini, evaluasi model dilakukan dengan menggunakan confusion matrix, akurasi, dan f1 score sebagai metrik penilaian untuk setiap model. Sebelum itu, akan dijelaskan terlebih dahulu cara menghitung akurasi dan f1 score serta cara memanfaatkan confusion matrix.
 ### Penjelasan Confusion Matrix:
@@ -406,17 +417,6 @@ Menggunakan Random Forest dimaknai:
 - 58 responden dengan kondisi Insufficient Weight telah diklasifikasikan dengan benar, sementara 1 responden salah diklasifikasikan sebagai Normal Weight.
 - 59 responden dengan kondisi Obesity Type II telah diklasifikasikan dengan benar.
 - 80 responden dengan kondisi Obesity Type III telah diklasifikasikan dengan benar.
-
-### Kelebihan dan Kekurangan Setiap Algoritma
-
-| Algoritma               | Kelebihan                                                                                           | Kekurangan                                                                                           |
-|-------------------------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| **Random Forest**       | - Tidak mudah overfitting<br>- Mampu menangani data non-linear dan fitur dalam jumlah besar         | - Model kompleks dan sulit diinterpretasi<br>- Memerlukan memori dan waktu komputasi yang besar       |
-| **XGBoost Classifier**  | - Akurasi tinggi<br>- Mendukung regularisasi untuk mengurangi overfitting<br>- Cocok untuk data tidak seimbang | - Proses training lebih lama<br>- Membutuhkan tuning hyperparameter yang cukup kompleks               |
-| **Support Vector Machine (SVM)** | - Efektif untuk data high-dimensional<br>- Cocok untuk dataset kecil dengan margin antar kelas yang jelas | - Kurang efisien pada dataset besar<br>- Pemilihan kernel dan parameter cukup sulit dan sensitif      |
-
-### Pemilihan Model Terbaik
-Berdasarkan hasil evaluasi, model yang dipilih sebagai solusi adalah XGBoost. Karena model ini memiliki nilai akurasi tertinggi. 
 
 ## Kesimpulan
 ### 1. Mengetahui faktor apa saja yang paling berpengaruh terhadap tingkat obesitas seseorang
