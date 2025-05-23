@@ -196,7 +196,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
   > Setelah dicek, tidak ada data dari umur, tinggi dan berat badan yang bernilai 0.
 
-#### Menangani Outliers dengan IQR Method
+#### Memeriksa Outliers dengan IQR Method
 ##### 1. Menampilkan analisis statistik
 <p align="center">
   <img src="https://github.com/user-attachments/assets/80627d43-7d0e-428e-946d-517bc24d2676" width="1000"/>
