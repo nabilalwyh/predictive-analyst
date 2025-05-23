@@ -318,11 +318,13 @@ XGBoost (Extreme Gradient Boosting) adalah algoritma machine learning berbasis t
 - n_estimators = 168. Jumlah total pohon keputusan yang akan dibangun. Semakin banyak pohon, semakin kompleks model dan biasanya akurasi meningkat, tapi waktu komputasi juga lebih lama.
 - random_state = 9. Mengatur seed untuk pengacakan sehingga hasil pelatihan bisa direproduksi (konsisten) saat dijalankan ulang.
 - n_jobs = -1. Mengatur berapa banyak core CPU yang digunakan saat pelatihan. Nilai -1 artinya menggunakan seluruh core yang tersedia untuk mempercepat proses training.
+Hasil akurasi model XGBoost adalah 98.8%
 
 ### 2. Algoritma SVM
 Support Vector Machine (SVM) adalah algoritma supervised learning yang populer untuk klasifikasi dan regresi. Tujuan utama SVM adalah mencari sebuah hyperplane (garis atau bidang pemisah) terbaik yang dapat memisahkan kelas-kelas data dengan margin terbesar. Margin ini adalah jarak terdekat antara hyperplane dengan titik data dari masing-masing kelas. Dalam model ini, parameter yang digunakan adalah: 
 - kernel='rbf'. Menentukan tipe kernel yang digunakan, di sini adalah Radial Basis Function yang memungkinkan model membentuk batas pemisah non-linear yang fleksibel.
 - random_state=42. Menetapkan seed untuk pengacakan internal agar proses pelatihan bersifat deterministik dan hasilnya bisa direproduksi secara konsisten di setiap eksekusi ulang.
+Hasil akurasi model SVM adalah 89.47%
 
 ### 3. Algoritma Random Forest
 Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikasi dan regresi. Algoritma ini menggabungkan banyak pohon keputusan (decision trees) secara bersamaan untuk membuat prediksi yang lebih akurat dan stabil dibandingkan menggunakan satu pohon saja. Dalam model ini, parameter yang digunakan adalah: 
@@ -331,6 +333,7 @@ Random Forest adalah algoritma ensemble learning yang digunakan untuk klasifikas
 - max_depth=10: Menentukan kedalaman maksimum setiap pohon dalam hutan. ini diterapkan untuk mencegah overfitting, yaitu kondisi ketika model terlalu menyesuaikan diri terhadap data pelatihan dan tidak mampu menggeneralisasi dengan baik terhadap data baru. Dengan membatasi kedalaman, model hanya boleh membelah data hingga 10 tingkat saja, sehingga pola yang dipelajari cukup dalam namun tidak terlalu kompleks.
 - random_state=50: digunakan untuk memastikan hasil pelatihan model bisa direproduksi. Dalam konteks pembelajaran mesin, penggunaan random state yang tetap akan menghasilkan hasil yang konsisten setiap kali model dijalankan, karena proses internal seperti pemilihan sampel acak akan menggunakan seed yang sama.
 - n_jobs=-1: Menentukan jumlah inti (cores) yang digunakan untuk menghitung. Jika diatur ke -1, model akan menggunakan semua inti yang tersedia, sehingga mempercepat proses pelatihan.
+Hasil akurasi model Random Forest adalah 98.09%
 
 ### Kelebihan dan Kekurangan Setiap Algoritma
 
