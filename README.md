@@ -172,9 +172,8 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   > - Semakin tinggi level obesitas, semakin tinggi pula nilai median dan sebaran BMI-nya.
   > - BMI merupakan indikator yang sangat kuat dan konsisten dalam membedakan level obesitas.
 
-## Data Preparation
-### Data Cleaning
-#### Menangani Data Duplikat
+### Data Quality Verification
+#### Memeriksa data duplikat
 ##### 1. Menghitung jumlah data duplikat
 <p align="center">
   <img src="https://github.com/user-attachments/assets/091b34fa-5d68-4769-82cc-457ce857027d" width="300"/>
@@ -182,21 +181,7 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 
   > Berdasarkan program di atas, maka diketahui bahwa terdapat 24 data duplikat.
 
-##### 2. Menampilkan baris data yang duplikat 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/afd8eed2-7105-4cce-b8a8-0f0f5bf9e561" width="1000"/>
-</p>
-  
-  > Dari hasil di atas, terlihat bahwa ada data-data tersebut memang terduplikasi. Oleh karena itu, data duplikat ini akan dihapus.
-
-##### 3. Menghapus baris data yang duplikat 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="300"/>
-</p>
-  
-  > Setelah program di atas dijalankan, maka sudah tidak ada lagi data yang duplikat.
-
-#### Menangani Missing Value
+#### Memeriksa data missing value
 ##### 1. Menampilkan data missing value
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f5331f7b-9246-48b7-8871-c5d544ee6bd4" width="300"/>
@@ -210,17 +195,6 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
 </p>
 
   > Setelah dicek, tidak ada data dari umur, tinggi dan berat badan yang bernilai 0.
-
-##### 3. Menangani nilai nan pada data kategorikal feature
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6de8abba-36cf-4f16-9466-4757188c72d1" width="1000"/>
-</p>
-
-  > Program di atas digunakan untuk mengganti nilai yang dianggap missing tapi bukan np.nan menjadi np.nan, lalu menghapusnya dengan program berikut.
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f36df395-3f34-4b92-8b99-1a437d04cddc" width="300"/>
-</p>
 
 #### Menangani Outliers dengan IQR Method
 ##### 1. Menampilkan analisis statistik
@@ -260,6 +234,35 @@ Melakukan Multivariate Analysis untuk menganalisis hubungan antar variabel
   >
   > **Kesimpulan:**
   > Dari hasil analisis statistik deskriptif, dapat disimpulkan bahwa beberapa fitur seperti Age, Weight, Height, dan NCP menunjukkan keberadaan nilai yang tergolong ekstrem namun masih valid secara biologis dan kontekstual. Oleh karena itu, nilai-nilai tersebut tidak dihapus dari dataset karena tetap relevan untuk analisis obesitas. Sementara itu, fitur lain seperti CH2O, FAF, dan TUE menunjukkan distribusi data yang relatif normal tanpa adanya nilai yang mencolok sebagai outlier.
+
+## Data Preparation
+### Data Cleaning
+#### Menangani Data Duplikat
+##### 1. Menampilkan baris data yang duplikat 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/afd8eed2-7105-4cce-b8a8-0f0f5bf9e561" width="1000"/>
+</p>
+  
+  > Dari hasil di atas, terlihat bahwa ada data-data tersebut memang terduplikasi. Oleh karena itu, data duplikat ini akan dihapus.
+
+##### 2. Menghapus baris data yang duplikat 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ffda9ec5-f11e-4c8d-b365-1d57fc476151" width="300"/>
+</p>
+  
+  > Setelah program di atas dijalankan, maka sudah tidak ada lagi data yang duplikat.
+
+#### Menangani Missing Value
+##### 1. Menangani nilai nan pada data kategorikal feature
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6de8abba-36cf-4f16-9466-4757188c72d1" width="1000"/>
+</p>
+
+  > Program di atas digunakan untuk mengganti nilai yang dianggap missing tapi bukan np.nan menjadi np.nan, lalu menghapusnya dengan program berikut.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f36df395-3f34-4b92-8b99-1a437d04cddc" width="300"/>
+</p>
 
 ### Encoding Categorical
 Encoding Kategorikal dilakukan terhadap variabel yang hanya berisi antara `yes` (iya) dan `no` (tidak), yaitu pada variable:
