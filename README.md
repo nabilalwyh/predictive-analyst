@@ -298,6 +298,17 @@ Target pada dataset ini adalah variabel `NObeyesdad` untuk mengetahui akurasi pr
   <img src="https://github.com/user-attachments/assets/08875066-dc77-4c86-bd28-58c6a5b991f0" width="1000"/>
 </p>
 
+### Normalisasi
+Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses scaling dan normalisasi membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma dengan range 0 hingga 1 dan menyeragamkan karena memiliki satuan yang berbeda pada tiap fitur.
+#### 1. Melakukan normalisasi pada data training
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/75a7f387-1077-4186-8e3f-c57eb71185fc" width="1000"/>
+</p>
+
+#### 2. Melakukan normalisasi pada data testing 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3096de0b-90b1-425d-a0e5-d2ff10125f25" width="1000"/>
+</p>
 
 ## Modeling
 ### 1. Algoritma XGBoost
