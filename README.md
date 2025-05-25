@@ -347,7 +347,7 @@ Hasil akurasi model Random Forest adalah 98.09%
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1d03c797-380b-45b9-baf9-a1bf6a0cb3ca" width="600"/>
 </p>
-Berdasarkan hasil evaluasi, model yang dipilih sebagai solusi adalah XGBoost, karena model ini memiliki nilai akurasi tertinggi. XGBoost juga dipilih karena memiliki kemampuan yang baik dalam menangani overfitting melalui mekanisme regularisasi (L1 dan L2), serta dikenal efisien dan cepat dalam proses pelatihan, terutama untuk dataset yang besar dan kompleks. Selain itu, XGBoost mampu menangani nilai yang hilang secara otomatis dan sangat efektif dalam mempelajari hubungan non-linear dalam data.
+Berdasarkan tabel nilai akurasi setiap model, model yang dipilih sebagai solusi adalah XGBoost, karena model ini memiliki nilai akurasi tertinggi. XGBoost juga dipilih karena memiliki kemampuan yang baik dalam menangani overfitting melalui mekanisme regularisasi (L1 dan L2), serta dikenal efisien dan cepat dalam proses pelatihan, terutama untuk dataset yang besar dan kompleks. Selain itu, XGBoost mampu menangani nilai yang hilang secara otomatis dan sangat efektif dalam mempelajari hubungan non-linear dalam data.
 
 ## Evaluation
 Dalam proyek ini, evaluasi model dilakukan dengan menggunakan confusion matrix, akurasi, dan f1 score sebagai metrik penilaian untuk setiap model. Sebelum itu, akan dijelaskan terlebih dahulu cara menghitung akurasi dan f1 score serta cara memanfaatkan confusion matrix.
