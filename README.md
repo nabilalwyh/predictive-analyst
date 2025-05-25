@@ -313,9 +313,9 @@ Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepa
 ## Modeling
 ### 1. Algoritma XGBoost
 XGBoost (Extreme Gradient Boosting) adalah algoritma machine learning berbasis teknik gradient boosting yang sangat populer dan efisien untuk masalah klasifikasi dan regresi. Inti dari XGBoost adalah membangun model secara bertahap dengan cara menggabungkan banyak decision tree secara berurutan, di mana setiap pohon baru bertujuan untuk memperbaiki kesalahan (residual error) yang dihasilkan oleh model sebelumnya. Dalam model ini, parameter yang digunakan adalah: 
-- max_depth = 5. Menentukan kedalaman maksimum dari setiap pohon keputusan. Pohon dengan kedalaman lebih dalam dapat menangkap pola yang lebih kompleks, tapi juga berisiko menyebabkan overfitting. Dengan max_depth=5, model dibatasi agar setiap pohon tidak terlalu dalam sehingga lebih general.
-- learning_rate. Mengatur besar langkah (step size) setiap pohon baru saat memperbarui model. Learning rate kecil berarti model belajar secara perlahan, mengurangi risiko overfitting, namun memerlukan lebih banyak pohon (n_estimators). Sebaliknya, learning rate besar mempercepat pembelajaran tapi risiko overfitting meningkat.
-- n_estimators = 168. Jumlah total pohon keputusan yang akan dibangun. Semakin banyak pohon, semakin kompleks model dan biasanya akurasi meningkat, tapi waktu komputasi juga lebih lama.
+- max_depth = 3. Menentukan kedalaman maksimum dari setiap pohon keputusan. Pohon dengan kedalaman lebih dalam dapat menangkap pola yang lebih kompleks, tapi juga berisiko menyebabkan overfitting. Dengan max_depth=5, model dibatasi agar setiap pohon tidak terlalu dalam sehingga lebih general.
+- learning_rate = 0.09828366951253616 Mengatur besar langkah (step size) setiap pohon baru saat memperbarui model. Learning rate kecil berarti model belajar secara perlahan, mengurangi risiko overfitting, namun memerlukan lebih banyak pohon (n_estimators). Sebaliknya, learning rate besar mempercepat pembelajaran tapi risiko overfitting meningkat.
+- n_estimators = 165. Jumlah total pohon keputusan yang akan dibangun. Semakin banyak pohon, semakin kompleks model dan biasanya akurasi meningkat, tapi waktu komputasi juga lebih lama.
 - random_state = 9. Mengatur seed untuk pengacakan sehingga hasil pelatihan bisa direproduksi (konsisten) saat dijalankan ulang.
 - n_jobs = -1. Mengatur berapa banyak core CPU yang digunakan saat pelatihan. Nilai -1 artinya menggunakan seluruh core yang tersedia untuk mempercepat proses training.
 Hasil akurasi model XGBoost adalah 98.8%
